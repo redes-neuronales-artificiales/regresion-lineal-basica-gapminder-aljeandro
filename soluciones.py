@@ -22,10 +22,10 @@ def pregunta_01():
     X = df[['fertility']].values
 
     # Imprima las dimensiones de `y`
-    print(y.shape)
+    print(y.shape())
 
     # Imprima las dimensiones de `X`
-    print(X.shape)
+    print(X.shape())
 
     # Transforme `y` a un array de numpy usando reshape
     y_reshaped = y.reshape(y.shape[0], y.shape[1])
@@ -53,16 +53,16 @@ def pregunta_02():
     print(df.shape)
 
     # Imprima la correlación entre las columnas `life` y `fertility` con 4 decimales.
-    print(df['life'].corr(df['fertility']))
+    print(round(df['life'].corr(df['fertility']), 4))
 
     # Imprima la media de la columna `life` con 4 decimales.
     print(df['life'].mean().round(4))
 
     # Imprima el tipo de dato de la columna `fertility`.
-    print(df['fertility'].dtype)
+    print(type(df['fertility']))
 
     # Imprima la correlación entre las columnas `GDP` y `life` con 4 decimales.
-    print(df['GDP'].corr(df['life']))
+    print(round(df['GDP'].corr(df['life']), 4))
 
 
 def pregunta_03():
